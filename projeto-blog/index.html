@@ -18,7 +18,7 @@
 
     <!-- Estilo customizado -->
     <link rel="stylesheet" type="text/css" href="css/estilo.css">
-		<title>Eterno - Nerd</title>
+		<title>Notícias - Nerd</title>
 	</head>
 	<body>
 		<header><!-- inicio do cabecalho -->
@@ -26,8 +26,13 @@
 				<div class="container"><!-- inicio do container cabecalho -->
 					
 					<a href="index.html" class="navbar-brand"><!-- inicio da logo cabecalho -->
-					  Eterno Nerd	<img src="" width="142">
+					  Notícias Nerd	<img src="" width="142">
 					</a><!-- fim da logo cabecalho -->
+
+					<!--Menu Hamburguer -->
+					<button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+						<span class="navbar-toggler-icon"></span>
+					</button>
 
 					<div class="collapse navbar-collapse" id="nav-principal"><!-- inicio da navegação -->
 						<ul class="navbar-nav ml-auto">
@@ -47,7 +52,7 @@
 								<a href="" class="nav-link">Quem somos</a>
 							</li>
 						</ul>
-					</div><!-- inicio da navegação -->
+					</div><!-- fim da navegação -->
 
 
 				</div><!-- fim do container cabecalho -->
@@ -55,42 +60,53 @@
 		</header><!-- fim do cabecalho -->
 
 		<section id="home" class="d-flex"><!-- inicio da seção home -->
-			<div class="container align-self-center"><!-- inicio do container seção home -->
+			<div class="container align-self-center text-xl-center text-lg-center"><!-- inicio do container seção home -->
 				<div class="row"><!-- inicio da row seção home -->
-					<div class="col-md-3">
-						<div class="row"><!-- inicio das imagens lateral esquerda seção home -->
-							<div class="col-md-6">
-								<img src="https://images.unsplash.com/photo-1616864202083-a2a6345af2c9?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=640&ixlib=rb-1.2.1&q=80&w=640" width="470" height="320" class="img-fluid d-none d-md-block img-responsive" >
-							</div>
-							<div class="col-md-6">
-								<img  src="https://images.unsplash.com/photo-1618231560380-f4791a31f900?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=640&ixlib=rb-1.2.1&q=80&w=640" width="470" height="320" class="img-fluid d-none d-md-block img-responsive" >
-							</div>
-						</div><!-- fim das imagens lateral esquerda seção home -->
-					</div>
+					<div class="col-md-12">
+						<div id="carousel-controles" class="carousel slide" data-ride="carousel">
+							<div class="carousel-inner"><!-- Inner -->
+								<div class="carousel-item active">
+									<img src="imagens/imagem1.jpeg" class="w-80">
+								</div>
+								<div class="carousel-item">
+									<img src="imagens/imagem2.jpeg" class="w-80">
+								</div>
+								<div class="carousel-item">
+									<img src="imagens/imagem3.jpeg" class="w-80">
+								</div>
+							</div><!-- /Inner -->
+							 <!-- Controles -->
+				            <a href="#carousel-controles" class="carousel-control-prev" data-slide="prev">
+				              <span class="carousel-control-prev-icon"></span>
+				            </a>
 
-					<div class="col-md-6"><!-- inicio da imagem central seção home -->
-						<div class="row"><!-- inicio da row imagem central seção home -->
-							<div class="col-md-12">
-								<img src="https://images.unsplash.com/photo-1617392461236-512d47bc67bb?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=606&ixlib=rb-1.2.1&q=80&w=890" class="img-fluid d-none d-md-block img-responsive">
-							</div>
-						</div><!-- fim da row imagem central seção home -->
-					</div><!-- fim da imagem central seção home -->
-
-					<div class="col-md-3">
-						<div class="row"><!-- inicio das imagens lateral direita seção home -->
-							<div class="col-md-6">
-								<img src="https://images.unsplash.com/photo-1616864202083-a2a6345af2c9?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=640&ixlib=rb-1.2.1&q=80&w=640" width="470" height="320" class="img-fluid img-responsive" >
-							</div>
-							<div class="col-md-6">
-								<img src="https://images.unsplash.com/photo-1618231560380-f4791a31f900?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=640&ixlib=rb-1.2.1&q=80&w=640" width="470" height="320" class="img-fluid img-responsive" >
-							</div>
-						</div><!-- fim das imagens lateral direita seção home -->
+				            <a href="#carousel-controles" class="carousel-control-next" data-slide="next">
+				              <span class="carousel-control-next-icon"></span>
+				            </a>
+						</div>
 					</div>
+							
+					
 
 				</div><!-- fim da row seção home -->
 			</div><!-- fim do container seção home -->
 		</section><!-- fim da seção home -->
 
+		<section>~<!-- Início Cinema e TV -->
+			<div class="container"><!-- inicio do container seção cinema e tv -->
+				<div class="row"><!-- inicio da row seção cinema e tv -->
+					
+					</div>
+				</div><!-- Fim da row seção cinema e tv -->
+			</div><!-- Fim do container seção cinema e tv -->
+		</section><!-- Fim Cinema e TV -->
+
+
+	<!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 	</body>
 </html>
